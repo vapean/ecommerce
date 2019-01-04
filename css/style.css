@@ -42,3 +42,10 @@ h6 {
     width: 980px;
     margin: 0 auto;
 }
+
+.hero{
+    background-image: url(../images/chica.jpg);
+    height: 425px;
+    background-size: cover; 
+/*    le dice al navegador que adapte la imagen al espacio disponible sin modificarla*/
+}
