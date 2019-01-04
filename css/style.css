@@ -1,1 +1,44 @@
 @import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Cuprum:400,700');
+
+body{
+    font-family: 'Cuprum', sans-serif;
+    font-size: 1em;
+}
+
+p{
+    color:#646464
+}
+
+h1, h2, h3, h4, h5, h6{
+    color. #717171;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 140%;
+}
+h2 {
+    font-size: 120%;
+}
+h3 {
+    font-size: 110%;
+}
+h4 {
+    font-size: 105%;
+}
+h5 {
+    font-size: 90%;
+}
+h6 {
+    font-size: 80%;
+}
+
+.row{
+    width: 980px;
+    margin: 0 auto;
+}
