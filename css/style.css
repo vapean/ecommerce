@@ -1,6 +1,9 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css?family=Cuprum:400,700');
 
+*{box-sizing: border-box}
+/*hace que los padding/border (no margin) no afecten al tamaño total de las cajas*/
+
 body{
     font-family: 'Cuprum', sans-serif;
     font-size: 1em;
@@ -43,9 +46,67 @@ h6 {
     margin: 0 auto;
 }
 
+.row:after{
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+}
+
 .hero{
     background-image: url(../images/chica.jpg);
     height: 425px;
     background-size: cover; 
 /*    le dice al navegador que adapte la imagen al espacio disponible sin modificarla*/
+}
+
+
+/*HEADER*/
+header{
+    height: 85px;
+    padding: 30px 0 0 0;
+}
+
+header .logo img{
+    border-right: 1px solid #ddd;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+/*header nav ul li a{
+    display: block;
+    padding: 10px 20px 26px 20px;
+    text-align: center;
+    color: #646464;
+}*/
+
+header nav ul li a{
+    display: block;
+    padding: 10px 20px 0px 20px;
+    text-align: center;
+    color: #646464;
+    height: 55px;
+}
+/*es mejor ponerlo asi con un height fijo ya que asi no nos afectará a asegún que navegadores y como interpreten el tamaño de las tipografías*/
+header nav ul li a:hover{
+    color: #404040;
+    border-bottom: 3px solid #fe0000;
+}
+
+header .carrito a{
+    font-size: 150%;
+    color: #646464;
+    border: 2px solid #646464;
+    padding: 5px 15px;
+    border-radius: 25px;
+}
+
+header .logo, header nav{
+    float: left;
+}
+
+header .carrito {
+    float: right;
 }
