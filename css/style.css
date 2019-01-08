@@ -14,7 +14,7 @@ p{
 }
 
 h1, h2, h3, h4, h5, h6{
-    color. #717171;
+    color: #717171;
     font-weight: 700;
 }
 
@@ -219,6 +219,41 @@ main .products h2 {
     width: 20%;
     margin: 0 auto;
     margin-top: -17px;
+    margin-bottom: 20px;
+}
+
+main .products article{
+    border: 4px solid #ebebeb;
+    width: 31%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    line-height: 20px;
+    position: relative;
+    margin-right: 2%;
+}
+/*se pone el 31% de anchura + el 2% de margen ya que suman 33% x3 = 99% */
+
+main .products article .descuento {
+    position: absolute;
+    background-color: #f44d55;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    width: 25%;
+    border-left: 4px solid #fe0000;
+    top: 25px;
+    left: -4px;
+}
+
+main .products article img {
+    width: 100%;
+    height: auto;
+}
+
+.flex{
+    display: flex;
+    flex-flow: row wrap;
 }
 
 /*FIN DEL MAIN*/
