@@ -14,7 +14,7 @@ p{
 }
 
 h1, h2, h3, h4, h5, h6{
-    color. #717171;
+    color: #717171;
     font-weight: 700;
 }
 
@@ -119,6 +119,7 @@ header .carrito {
 footer {
     background-color: #ebebeb;
 }
+/*no aplicamos la clase row directamente porque hay un color fluido de fondo*/
 
 footer .footer_sup {
     padding:  50px 0px;
@@ -158,7 +159,7 @@ footer .columna .social li{
 }
 
 footer a{
-    color: #646464
+    color: #646464;
 }
 
 footer a:hover{
@@ -167,12 +168,12 @@ footer a:hover{
 
 
 footer .footer_sup .big div p{
-    padding: 10px 0px
+    padding: 10px 0px;
 }
 
 
 footer .footer_sup .small nav ul li {
-    line-height: 25px
+    line-height: 25px;
 }
 
 /*
@@ -189,4 +190,86 @@ Es lo mismo pero poniendoselo el padding al p me ahorro unas lineas de css
 */
 
 
-/*Fin del Footer*/
+/*FIN DEL FOOTER*/
+
+
+
+
+/*INICIO DEL MAIN*/
+
+h1 {
+    display: none;
+}
+
+
+main .products {
+    padding: 40px 0px;
+}
+
+main .products hr {
+    border-color: #eee;
+    width: 70%;
+}
+
+main .products h2 {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    color: #717171;
+    width: 20%;
+    margin: 0 auto;
+    margin-top: -17px;
+    margin-bottom: 20px;
+}
+
+main .products article{
+    border: 4px solid #ebebeb;
+    width: 31%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    line-height: 20px;
+    position: relative;
+    margin-right: 2%;
+}
+/*se pone el 31% de anchura + el 2% de margen ya que suman 33% x3 = 99% */
+
+main .products article .descuento {
+    position: absolute;
+    background-color: #f44d55;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    width: 25%;
+    border-left: 4px solid #fe0000;
+    top: 25px;
+    left: -4px;
+}
+
+main .products article img {
+    width: 100%;
+    height: auto;
+}
+
+.flex{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.brand {
+    margin-right: 5.6%; 
+/*    esto lo calcula sumando los pixeles y dividiendo entre el ancho de la caja*/
+    border: 4px solid #ebebeb;
+
+}
+
+.brand:last-child {
+    margin-right: 0%;
+}
+
+.marcas{
+    padding-bottom: 40px;
+}
+
+/*FIN DEL MAIN*/
+
