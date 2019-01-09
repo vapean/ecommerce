@@ -1,0 +1,275 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Cuprum:400,700');
+
+*{box-sizing: border-box}
+/*hace que los padding/border (no margin) no afecten al tamaño total de las cajas*/
+
+body{
+    font-family: 'Cuprum', sans-serif;
+    font-size: 1em;
+}
+
+p{
+    color:#646464
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #717171;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 140%;
+}
+h2 {
+    font-size: 120%;
+}
+h3 {
+    font-size: 110%;
+}
+h4 {
+    font-size: 105%;
+}
+h5 {
+    font-size: 90%;
+}
+h6 {
+    font-size: 80%;
+}
+
+.row{
+    width: 980px;
+    margin: 0 auto;
+}
+
+.row:after{
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+.hero{
+    background-image: url(../images/chica.jpg);
+    height: 425px;
+    background-size: cover; 
+/*    le dice al navegador que adapte la imagen al espacio disponible sin modificarla*/
+}
+
+
+/*HEADER*/
+header{
+    height: 85px;
+    padding: 30px 0 0 0;
+}
+
+header .logo img{
+    border-right: 1px solid #ddd;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+/*header nav ul li a{
+    display: block;
+    padding: 10px 20px 26px 20px;
+    text-align: center;
+    color: #646464;
+}*/
+
+header nav ul li a{
+    display: block;
+    padding: 10px 20px 0px 20px;
+    text-align: center;
+    color: #646464;
+    height: 55px;
+}
+/*es mejor ponerlo asi con un height fijo ya que asi no nos afectará a asegún que navegadores y como interpreten el tamaño de las tipografías*/
+header nav ul li a:hover{
+    color: #404040;
+    border-bottom: 3px solid #fe0000;
+}
+
+header .carrito a{
+    font-size: 150%;
+    color: #646464;
+    border: 2px solid #646464;
+    padding: 5px 15px;
+    border-radius: 25px;
+}
+
+header .logo, header nav{
+    float: left;
+}
+
+header .carrito {
+    float: right;
+}
+
+
+/*Fin del Header*/
+
+
+/*Footer*/
+footer {
+    background-color: #ebebeb;
+}
+/*no aplicamos la clase row directamente porque hay un color fluido de fondo*/
+
+footer .footer_sup {
+    padding:  50px 0px;
+}
+
+footer .footer_inf {
+    padding: 20px 0px;
+    border-top: 1px solid black;
+    
+}
+
+footer .columna{
+    float: left;
+    padding: 0px 60px 0px 0px;
+}
+
+footer .small{
+    width: 20%
+}
+
+footer .big{
+   width: 60%
+}
+
+footer .footer_sup .columna h3 {
+    margin-bottom: 30px;
+}
+
+footer .footer_sup .small .stores{
+    margin-bottom: 20px
+}
+
+footer .columna .social li{
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+footer a{
+    color: #646464;
+}
+
+footer a:hover{
+    color: #fe0000;
+}
+
+
+footer .footer_sup .big div p{
+    padding: 10px 0px;
+}
+
+
+footer .footer_sup .small nav ul li {
+    line-height: 25px;
+}
+
+/*
+footer .footer_sup .big div{
+    padding: 0px 0px 10px 0px;
+}
+
+footer .footer_sup .big div h4{
+        padding: 0px 0px 10px 0px;
+} 
+
+
+Es lo mismo pero poniendoselo el padding al p me ahorro unas lineas de css
+*/
+
+
+/*FIN DEL FOOTER*/
+
+
+
+
+/*INICIO DEL MAIN*/
+
+h1 {
+    display: none;
+}
+
+
+main .products {
+    padding: 40px 0px;
+}
+
+main .products hr {
+    border-color: #eee;
+    width: 70%;
+}
+
+main .products h2 {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    color: #717171;
+    width: 20%;
+    margin: 0 auto;
+    margin-top: -17px;
+    margin-bottom: 20px;
+}
+
+main .products article{
+    border: 4px solid #ebebeb;
+    width: 31%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    line-height: 20px;
+    position: relative;
+    margin-right: 2%;
+}
+/*se pone el 31% de anchura + el 2% de margen ya que suman 33% x3 = 99% */
+
+main .products article .descuento {
+    position: absolute;
+    background-color: #f44d55;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    width: 25%;
+    border-left: 4px solid #fe0000;
+    top: 25px;
+    left: -4px;
+}
+
+main .products article img {
+    width: 100%;
+    height: auto;
+}
+
+.flex{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.brand {
+    margin-right: 5.6%; 
+/*    esto lo calcula sumando los pixeles y dividiendo entre el ancho de la caja*/
+    border: 4px solid #ebebeb;
+
+}
+
+.brand:last-child {
+    margin-right: 0%;
+}
+
+.marcas{
+    padding-bottom: 40px;
+}
+
+/*FIN DEL MAIN*/
+
